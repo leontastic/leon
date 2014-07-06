@@ -1,0 +1,134 @@
+/* Colors */
+
+  /* background colours */
+  $theme-dark: #181818;
+  $theme: #202020;
+  $theme-light: #333;
+  $bg-default: #202020;
+
+  /* font colours */
+  $color-text: #333;
+  $color-link: #c00;
+  $color-link-underline: #c33;
+  $bg-gray: #eee;
+
+/* Font sizes */
+
+  $xlarge: 40px;
+  $large: 32px;
+  $medium: 28px;
+  $body: 22px;
+  $small: 14px;
+
+
+/* Widths */
+$width-medium: 512px;
+
+/* define default font */
+body {font: 300 18px 'Source Sans Pro', sans-serif;}
+
+/* off-black for text */
+body, select, input, textarea {color: $color-text;}
+
+li a, p a, h2 a, h3 a, table a {color: #fff; &:hover {border-bottom: 1px solid $theme-light;}}
+
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #888; color: #fff; text-shadow: none;}
+::selection {background: #888; color: #fff; text-shadow: none;} 
+
+/*  j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #ccc;} 
+
+ins {background-color: #ccc; color: #222; text-decoration: none;}
+mark {background-color: #ccc; color: #222; font-style: italic; font-weight: bold;}
+
+/* Mozilla dosen't style place holders by default */
+input:-moz-placeholder { color:#a9a9a9; }
+textarea:-moz-placeholder { color:#a9a9a9; }
+
+/* Print styles
+-------------------------------------------------------------------------------*/
+@media print {
+
+
+
+}
+
+/* Main styles
+-------------------------------------------------------------------------------*/
+html, body {
+  background: $bg-default;
+  height: 100%;
+}
+header {
+  padding: 64px 0 80px;
+  margin: 0 auto;
+  background: $theme;
+  color: #fff;
+  h1 {
+    border-top: 1px solid $theme-light;
+    border-bottom: 1px solid $theme-light;
+    background: $theme-dark;
+    padding: 12px 0;
+    margin-bottom: 40px;
+    font-size: $xlarge;
+    font-weight: 300;
+  }
+  h2 {
+    font-family: 'Source Serif Pro', serif;
+    margin-bottom: 32px;
+    font-size: $xlarge;
+    font-weight: 400;
+  }
+  h3 {
+    margin-bottom: 32px;
+    font-size: $medium;
+    font-weight: 300;
+  }
+  h3:last-of-type {
+    margin-bottom: 48px;
+  }
+}
+
+/* Custom classes
+-------------------------------------------------------------------------------*/
+div.center {
+  max-width: 864px;
+  padding: 0 32px;
+  margin: 0 auto;
+}
+a.round-link {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 16px 32px;
+  border: 1px solid $theme-light;
+  border-radius: 64px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  font-size: $small;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: $theme-dark;
+  transition: background 0.1s;
+
+  &:hover {
+    background: #121212;
+  }
+}
+
+/* Media queries
+-------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+header {
+  h2 {
+    font-size: $medium;
+  }
+  h3 {
+    font-size: $body;
+  }
+}
+}
+@media screen and (max-width: 1024px) {
+}

@@ -1,0 +1,115 @@
+/* Colors */
+/* background colours */
+/* font colours */
+/* Font sizes */
+/* Widths */
+/* define default font */
+body {
+  font: 300 18px 'Source Sans Pro', sans-serif; }
+
+/* off-black for text */
+body, select, input, textarea {
+  color: #333333; }
+
+li a, p a, h2 a, h3 a, table a {
+  color: #fff; }
+  li a:hover, p a:hover, h2 a:hover, h3 a:hover, table a:hover {
+    border-bottom: 1px solid #333333; }
+
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+::-moz-selection {
+  background: #888;
+  color: #fff;
+  text-shadow: none; }
+
+::selection {
+  background: #888;
+  color: #fff;
+  text-shadow: none; }
+
+/*  j.mp/webkit-tap-highlight-color */
+a:link {
+  -webkit-tap-highlight-color: #ccc; }
+
+ins {
+  background-color: #ccc;
+  color: #222;
+  text-decoration: none; }
+
+mark {
+  background-color: #ccc;
+  color: #222;
+  font-style: italic;
+  font-weight: bold; }
+
+/* Mozilla dosen't style place holders by default */
+input:-moz-placeholder {
+  color: #a9a9a9; }
+
+textarea:-moz-placeholder {
+  color: #a9a9a9; }
+
+/* Print styles
+-------------------------------------------------------------------------------*/
+/* Main styles
+-------------------------------------------------------------------------------*/
+html, body {
+  background: #202020;
+  height: 100%; }
+
+header {
+  padding: 64px 0 80px;
+  margin: 0 auto;
+  background: #202020;
+  color: #fff; }
+  header h1 {
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    background: #181818;
+    padding: 12px 0;
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 300; }
+  header h2 {
+    font-family: 'Source Serif Pro', serif;
+    margin-bottom: 32px;
+    font-size: 40px;
+    font-weight: 400; }
+  header h3 {
+    margin-bottom: 32px;
+    font-size: 28px;
+    font-weight: 300; }
+  header h3:last-of-type {
+    margin-bottom: 48px; }
+
+/* Custom classes
+-------------------------------------------------------------------------------*/
+div.center {
+  max-width: 864px;
+  padding: 0 32px;
+  margin: 0 auto; }
+
+a.round-link {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 16px 32px;
+  border: 1px solid #333333;
+  border-radius: 64px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #181818;
+  transition: background 0.1s; }
+  a.round-link:hover {
+    background: #121212; }
+
+/* Media queries
+-------------------------------------------------------------------------------*/
+@media screen and (max-width: 480px) {
+  header h2 {
+    font-size: 28px; }
+  header h3 {
+    font-size: 22px; } }
