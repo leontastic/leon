@@ -4,22 +4,26 @@
   $theme-dark: #181818;
   $theme: #202020;
   $theme-light: #333;
-  $bg-default: #202020;
+  $bg-default: #fafafa;
 
   /* font colours */
-  $color-text: #333;
-  $color-link: #c00;
-  $color-link-underline: #c33;
-  $bg-gray: #eee;
+  $color-text: #111;
+  $color-text-light: #333;
 
 /* Font sizes */
 
   $xlarge: 40px;
   $large: 32px;
   $medium: 28px;
-  $body: 22px;
+  $lead: 22px;
+  $body: 16px;
   $small: 14px;
 
+/* Font families */
+
+  $lato: Lato, sans-serif;
+  $sans: 'Source Sans Pro', sans-serif;
+  $serif: 'Source Serif Pro', serif;
 
 /* Widths */
 $width-medium: 512px;
@@ -61,8 +65,8 @@ html, body {
   height: 100%;
 }
 header {
-  padding: 64px 0 80px;
-  margin: 0 auto;
+  padding: 64px 0;
+  min-height: 100%;
   background: $theme;
   color: #fff;
   h1 {
@@ -71,11 +75,12 @@ header {
     background: $theme-dark;
     padding: 12px 0;
     margin-bottom: 40px;
+    font-family: Lato, sans-serif;
     font-size: $xlarge;
     font-weight: 300;
   }
   h2 {
-    font-family: 'Source Serif Pro', serif;
+    font-family: $serif;
     margin-bottom: 32px;
     font-size: $xlarge;
     font-weight: 400;
@@ -88,6 +93,43 @@ header {
   h3:last-of-type {
     margin-bottom: 48px;
   }
+}
+main {
+  padding: 64px 0;
+  h1 {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+    font-family: $lato;
+    font-size: $lead;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+    article {
+      margin: 48px 0;
+      time {
+        display: block;
+        float: right;
+        margin-top: 16px;
+        color: $color-text-light;
+        font-family: $sans;
+        font-size: $body;
+        font-weight: 400;
+        letter-spacing: 1px;
+        // text-transform: uppercase;
+      }
+      h2 {
+        font-family: $sans;
+        font-size: $medium;
+        font-weight: 400;
+        color: $color-text-light;
+      }
+      img {
+        width: 100%;
+        border: 1px solid #ccc;
+        margin: 8px 0;
+      }
+    }
 }
 
 /* Custom classes
